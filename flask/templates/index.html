@@ -1,0 +1,110 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Sales Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #3b5998;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            width: 60%;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group input:focus {
+            border-color: #3b5998;
+            outline: none;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #3b5998;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2d4373;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #3b5998;
+            color: white;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Credit Score and Risk Prediction</h1>
+        <p>Enter the details to predict Credit Score for Customers</p>
+    </header>
+
+    <div class="container">
+        <form method="POST">
+            <div class="form-group">
+                <label for="Date">Date</label>
+                <input type="date" name="Date" id="Date" placeholder="Select Date" required>
+            </div>
+            <div class="form-group">
+                <label for="Monetary">Monetary</label>
+                <input type="number" id="Monetary" name="Monetary" step="0.01" placeholder="Enter total amount" required>
+            </div>
+            <div class="form-group">
+                <label for="Frequency">Frequency</label>
+                <input type="number", id="Frequency", name="Frequency" placeholder="Enter customer frequency" required>
+            </div>
+            <div class="form-group">
+                <label for="Stability">Stability</label>
+                <input type="number", id="Stability", name="Stability" placeholder="Enter the standard deviation" required>
+            </div>
+            <div class="form-group">
+                <label for="Average_Transaction_Value">Average Transaction Value</label>
+                <input type="number", id="Average_Transaction_Value", name="Average_Transaction_Value" placeholder="Enter the average transaction of a customer" required>
+            </div>
+          
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Bati Bank Credit Scoring App. All rights reserved.</p>
+    </footer>
+</body>
+</html>

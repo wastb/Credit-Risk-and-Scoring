@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #3b5998;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            width: 60%;
+            margin: 30px auto;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .result-group {
+            margin-bottom: 20px;
+        }
+        .result-group p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .result-group strong {
+            color: #3b5998;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #3b5998;
+            color: white;
+            border-radius: 4px;
+            font-size: 16px;
+            text-align: center;
+        }
+        a:hover {
+            background-color: #2d4373;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #3b5998;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Credit Score Prediction Result</h1>
+    </header>
+
+    <div class="container">
+        <div class="result-group">
+            <p><strong>Date:</strong> {{ date }}</p>
+            <p><strong>Total Amount:</strong> {{ total_amount }}</p> 
+            <p><strong>Frequency:</strong> {{ frequency }}</p> 
+            <p><strong>Stability:</strong> {{ stability }}</p> 
+            <p><strong>Average Amount:</strong> {{ average_amount }}</p>
+            <p><strong>Risk Predicted (0=No Risk, 1=High Risk):</strong> {{ risk_predicted }}</p>
+            <p><strong>Credit Score:</strong> {{ credit_score }}</p> 
+        </div>
+        <a href="/">Back to Form</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Bati Bank Credit Scoring App. All rights reserved.</p>
+    </footer>
+</body>
+</html>
