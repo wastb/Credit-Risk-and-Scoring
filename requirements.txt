@@ -6,3 +6,5 @@ scikit-learn
 scorecardpy
 joblib
 pickle
+python_version >= 3.10, < 3.11
+
